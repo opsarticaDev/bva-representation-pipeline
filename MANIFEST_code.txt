@@ -1,0 +1,87 @@
+﻿CODE FILES
+
+Main analysis pipeline (recommended; see RUN_ORDER_code.txt for execution order)
+
+code\01_download_bva_decisions.pyw
+role: Download raw BVA decisions from the public source (2010-2025).
+status: Main pipeline - Step 01.
+
+code\02_clean_bva_decisions.py
+role: Clean and normalize raw decision files (encoding fixes, structural checks).
+status: Main pipeline - Step 02.
+
+code\03_index_and_parse_decisions.pyw
+role: Parse decisions into structured fields (representation, disposition, dates) and index.
+status: Main pipeline - Step 03.
+
+code\04_qc_text_and_headers.pyw
+role: Quality-check text, headers, parsed fields, and flag structurally suspect decisions.
+status: Main pipeline - Step 04.
+
+code\05_build_analysis_dataset.pyw
+role: Merge cleaned and indexed data into the analysis-ready decision-level dataset.
+status: Main pipeline - Step 05.
+
+code\06_build_study_rollups_2010_2025.pyw
+role: Create study-level rollups (counts and rates by year and representation) for 2010-2025.
+status: Main pipeline - Step 06.
+
+code\07_compute_summary_stats_2010_2025.pyw
+role: Compute summary statistics used in Table 1 and descriptive text.
+status: Main pipeline - Step 07.
+
+code\08_run_logit_models.pyw
+role: Run main logistic regression models (deny-only and deny-plus-dismiss) and export Tables 2A, 2B, and related robustness tables.
+status: Main pipeline - Step 08.
+
+code\09_run_multinomial_and_ipw_models.pyw
+role: Run multinomial models and IPW analyses; export Table 3, Tables S1-S2, S7, and IPW balance summaries.
+status: Main pipeline - Step 09.
+
+code\10_build_sensitivity_figures.pyw
+role: Build sensitivity and robustness figures (including IPW diagnostics).
+status: Main pipeline - Step 10.
+
+code\11_compute_effect_sizes.pyw
+role: Compute effect-size summaries used in discussion and figure annotations.
+status: Main pipeline - Step 11.
+
+code\12_build_publication_figures_2010_2025.pyw
+role: Generate publication-ready charts (Figures 1-4, S1-S6, S8).
+status: Main pipeline - Step 12.
+
+code\13_export_methods_tables_and_text.pyw
+role: Export methods-related tables and text snippets (balance, IPW summaries, model notes).
+status: Main pipeline - Step 13.
+
+code\14_generate_audit_sample_and_snapshot.pyw
+role: Generate the 300-case audit sample and snapshot outputs for QC.
+status: Main pipeline - Step 14.
+
+Archived integrated pipeline (optional alternative to Steps 01-14)
+
+code\analysis_part1_setup_preprocessing_and_descriptives.py
+role: Integrated script for setup, DB loading, preprocessing, representation/outcome coding, descriptives, flow, and audit sample.
+status: Archived integrated pipeline - supersedes Steps 03-07 in a single script.
+
+code\analysis_part2_primary_models_small_cluster_inference.py
+role: Integrated script for primary logistic models with wild cluster bootstrap and numeric results text snippet.
+status: Archived integrated pipeline - alternative to Step 08.
+
+code\analysis_part3_sensitivity_and_robustness_checks.py
+role: Integrated script for VLJ feasibility checks, covariate specifications, AMA split, outcome sensitivity, and multi-rep sensitivity.
+status: Archived integrated pipeline - alternative to parts of Steps 08-10.
+
+code\analysis_part4_ipw_and_figure_generation.py
+role: Integrated script for IPW analysis, diagnostics, and figure generation (including flow diagram and key charts).
+status: Archived integrated pipeline - alternative to parts of Steps 09-12.
+
+Optional setup and wrapper
+
+code\00_install_python_requirements.vbs
+role: Install Python dependencies and required packages on Windows.
+status: Optional setup - run once per environment before the main pipeline.
+
+code\99_run_full_pipeline.vbs
+role: Wrapper script to run the full pipeline (Steps 01-14) on Windows.
+status: Optional wrapper - convenience only; not required for replication.

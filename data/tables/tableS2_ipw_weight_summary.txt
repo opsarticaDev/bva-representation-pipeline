@@ -1,0 +1,2 @@
+propensity converged; pt=0.916; weights trimmed to [0.359,1.302]
+w min/med/max: 0.359/0.916/1.302

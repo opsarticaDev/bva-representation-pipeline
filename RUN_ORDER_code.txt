@@ -1,0 +1,67 @@
+﻿CODE RUN ORDER (clean alias names in code\)
+
+Step 00: 00_install_python_requirements.vbs
+  Install Python dependencies and required packages.
+
+Step 01: 01_download_bva_decisions.pyw
+  Download raw BVA decisions from public source.
+
+Step 02: 02_clean_bva_decisions.py
+  Clean and normalize raw decision files.
+
+Step 03: 03_index_and_parse_decisions.pyw
+  Parse decisions into structured fields and index.
+
+Step 04: 04_qc_text_and_headers.pyw
+  Quality-check text, headers, and parsed fields.
+
+Step 05: 05_build_analysis_dataset.pyw
+  Merge cleaned/indexed data into analysis-ready dataset.
+
+Step 06: 06_build_study_rollups_2010_2025.pyw
+  Create study-level rollups (counts, rates) 2010-2025.
+
+Step 07: 07_compute_summary_stats_2010_2025.pyw
+  Compute summary statistics used in tables and text.
+
+Step 08: 08_run_logit_models.pyw
+  Run main logistic regression models (Tables 2A, 2B).
+
+Step 09: 09_run_multinomial_and_ipw_models.pyw
+  Run multinomial models and IPW analyses (Table 3, S7).
+
+Step 10: 10_build_sensitivity_figures.pyw
+  Build sensitivity and robustness figures (e.g., IPW diagnostics).
+
+Step 11: 11_compute_effect_sizes.pyw
+  Compute effect size summaries used in discussion/figures.
+
+Step 12: 12_build_publication_figures_2010_2025.pyw
+  Generate publication-ready charts (Figures 1-4, S1-S6, S8).
+
+Step 13: 13_export_methods_tables_and_text.pyw
+  Export methods-related tables/text snippets (e.g., balance, IPW summaries).
+
+Step 14: 14_generate_audit_sample_and_snapshot.pyw
+  Generate audit sample (300 cases) and snapshot outputs.
+
+ARCHIVED INTEGRATED PIPELINE (optional, earlier 4-part path)
+
+Step S0: analysis_part1_setup_preprocessing_and_descriptives.py
+  Archived integrated script: setup, DB loading, preprocessing, representation/outcome coding, descriptives, flow, and audit sample.
+
+Step S1: analysis_part2_primary_models_small_cluster_inference.py
+  Archived integrated script: primary logistic models, wild cluster bootstrap, and numeric results text snippet.
+
+Step S2: analysis_part3_sensitivity_and_robustness_checks.py
+  Archived integrated script: VLJ FE feasibility, covariate specs, AMA split, outcome sensitivity, and multi-rep sensitivity.
+
+Step S3: analysis_part4_ipw_and_figure_generation.py
+  Archived integrated script: IPW analysis, diagnostics, and figure generation (including flow diagram).
+
+
+FULL WRAPPER
+
+Step 99: 99_run_full_pipeline.vbs
+  Wrapper script to run the full pipeline on Windows.
+

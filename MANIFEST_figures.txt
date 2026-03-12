@@ -1,0 +1,34 @@
+﻿FIGURE FILES (clean names in figures\)
+
+figures\fig1_sample_flow_diagram.png
+  role: Figure 1. Sample flow diagram.
+
+figures\fig2_representation_coverage_by_year.png
+  role: Figure 2. Representation coverage by year.
+
+figures\fig3_negative_outcomes_by_rep_type.png
+  role: Figure 3. Negative outcomes by representative type.
+
+figures\fig4_forest_plot_adjusted_odds_ratios.png
+  role: Figure 4. Forest plot of adjusted odds ratios.
+
+figures\figS1_negative_outcome_rate_deny_plus_dismiss.svg
+  role: Figure S1. Negative-outcome rate (deny plus dismiss).
+
+figures\figS2_dispositions_by_year.svg
+  role: Figure S2. Dispositions by year.
+
+figures\figS3_rep_type_shares_stacked.svg
+  role: Figure S3. Representative type shares among represented cases.
+
+figures\figS4_negative_outcome_rate_policy_comparison.svg
+  role: Figure S4. Policy comparison of negative-outcome rates.
+
+figures\figS5_2024_disposition_mix.png
+  role: Figure S5. 2024 disposition mix.
+
+figures\figS6_representation_coverage_comparison.svg
+  role: Figure S6. Representation coverage comparison.
+
+figures\figS8_ipw_balance_diagnostics.png
+  role: Figure S8. IPW balance diagnostics and weight distribution.

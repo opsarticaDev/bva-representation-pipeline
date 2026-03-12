@@ -1,0 +1,71 @@
+﻿data\tables\table1_descriptives_by_year_and_representation.csv
+  role: Table 1. Descriptive characteristics and counts by year and representation.
+  referenced: Results - Sample characteristics and flow. Methods - Study design and intake.
+
+data\tables\table2A_logit_deny_only_any_grant.csv
+  role: Table 2A. Logistic regression. Any grant vs deny only. Year fixed effects with wild cluster bootstrap.
+  referenced: Results - Primary logistic regression results. Figure 4 uses these ORs.
+
+data\tables\table2B_logit_deny_plus_dismiss_any_grant.csv
+  role: Table 2B. Logistic regression. Any grant vs deny plus dismiss. Year fixed effects with wild cluster bootstrap.
+  referenced: Results - Primary logistic regression results. Outcome-definition sensitivity.
+
+data\tables\table3_multinomial_grant_and_remand_vs_deny.csv
+  role: Table 3. Multinomial logit. Grant vs deny and remand vs deny. Year fixed effects with wild cluster bootstrap.
+  referenced: Results - Multinomial results. Discussion - robustness across outcome types.
+
+data\tables\tableS1_ipw_balance_smds.csv
+  role: Table S1. Covariate balance before and after IPW. Standardized mean differences.
+  referenced: Methods - IPW sensitivity analyses. Supplement - Table S1.
+
+data\tables\tableS2_ipw_weight_summary.txt
+  role: Table S2. IPW stabilized weights. Trim bounds, min, median, max, effective sample size.
+  referenced: Methods - IPW sensitivity analyses. Results - IPW sensitivity analyses. Supplement - Table S2.
+
+data\tables\tableS3_alt_covariate_specA.csv
+  role: Table S3, panel A. Alternative covariate specification A for main logistic models.
+  referenced: Supplement - Table S3. Methods/Discussion - alternative covariate specifications.
+
+data\tables\tableS3_alt_covariate_specB.csv
+  role: Table S3, panel B. Alternative covariate specification B for main logistic models.
+  referenced: Supplement - Table S3. Methods/Discussion - alternative covariate specifications.
+
+data\tables\tableS4_preAMA_logit_by_era.csv
+  role: Table S4 (part). AMA era stratified results. Pre-AMA period 2010-2018.
+  referenced: Results - Subgroup analyses and AMA-era interaction. Supplement - Table S4.
+
+data\tables\tableS4_postAMA_logit_by_era.csv
+  role: Table S4 (part). AMA era stratified results. Post-AMA period 2019-2025.
+  referenced: Results - Subgroup analyses and AMA-era interaction. Supplement - Table S4.
+
+data\tables\tableS5_grant_only_outcome_definition.csv
+  role: Table S5 (part). Outcome-definition sensitivity. Grant-only specification.
+  referenced: Results - Alternative outcome definitions. Supplement - Table S5.
+
+data\tables\tableS5_grant_plus_remand_outcome_definition.csv
+  role: Table S5 (part). Outcome-definition sensitivity. Grant vs grant-plus-remand specification.
+  referenced: Results - Alternative outcome definitions. Supplement - Table S5.
+
+data\tables\tableS6_multi_rep_dropped_sensitivity.csv
+  role: Table S6. Sensitivity analysis dropping multi-representative cases.
+  referenced: Methods - Multi-representative cases. Results - Robustness, small cells, and quality control. Supplement - Table S6.
+
+data\tables\tableS8_additional_specA.csv
+  role: Table S8, panel A. Additional model specification (e.g., extra controls / alternative coding).
+  referenced: Supplement - Table S8. Discussion - robustness across specifications.
+
+data\tables\tableS7_ipw_weighted_logit_any_representation.csv
+  role: Table S7. IPW-weighted regression results for any representation vs pro se.
+  referenced: Methods - IPW sensitivity analyses. Results - IPW sensitivity analyses.
+
+data\tables\tableS8_additional_specB.csv
+  role: Table S8, panel B. Additional model specification (e.g., alternative functional form / subset).
+  referenced: Supplement - Table S8. Discussion - robustness across specifications.
+
+data\tables\extra_multinomial_preAMA_robustness.csv
+  role: Uncited robustness output. Multinomial grant vs deny / remand vs deny, pre-AMA era (2010-2018).
+  referenced: Not cited in article or supplement. Included for replication and potential reviewer requests.
+
+data\tables\extra_multinomial_postAMA_robustness.csv
+  role: Uncited robustness output. Multinomial grant vs deny / remand vs deny, post-AMA era (2019-2025).
+  referenced: Not cited in article or supplement. Included for replication and potential reviewer requests.

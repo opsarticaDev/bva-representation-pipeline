@@ -1,0 +1,13 @@
+term,label,odds_ratio,ci_low,ci_high
+rep_attorney,Attorney,1.346942069019866,,
+rep_attorney:hearing,Attorney,0.9493874340202196,,
+rep_attorney:ama_cue,Attorney,0.8693399416654876,,
+rep_attorney:len_chars_z,Attorney,1.0046507285777222,,
+rep_agent,Agent,1.4736980587956867,,
+rep_agent:hearing,Agent,0.8101588959997488,,
+rep_agent:ama_cue,Agent,1.3127560161030278,,
+rep_agent:len_chars_z,Agent,0.8908967253884923,,
+rep_vso,VSO,1.1562626305554928,,
+rep_vso:hearing,VSO,0.9784794392086498,,
+rep_vso:ama_cue,VSO,1.220469509323708,,
+rep_vso:len_chars_z,VSO,1.002051391576642,,

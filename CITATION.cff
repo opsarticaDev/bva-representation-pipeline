@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Vernon
+    given-names: Calvin
+    orcid: "https://orcid.org/0009-0005-9900-1613"
+title: "Replication Package: Representation and Outcomes at the Board of Veterans' Appeals, 2010-2025"
+version: 1.0.0
+date-released: "2026-03-07"
+url: "https://osf.io/vzusf/"
+license: MIT
+type: software
+keywords:
+  - veterans affairs
+  - Board of Veterans Appeals
+  - legal representation
+  - disability appeals
+  - inverse probability weighting
+  - reproducible research

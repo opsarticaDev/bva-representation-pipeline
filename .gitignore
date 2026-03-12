@@ -1,0 +1,21 @@
+# Raw data (not included; see README for corpus details)
+*.db
+*.sqlite
+*.parquet
+
+# Pipeline outputs (reproducible from scripts)
+*.log
+checkpoint_*.parquet
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials
+.env
+*.key
